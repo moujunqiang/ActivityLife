@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的性别："
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_rb_man"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="男"
+            android:textColor="@drawable/btn_tv_select"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/btn_rb_woman"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="女"
+            android:textColor="@drawable/btn_tv_select"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的优势："
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唱歌" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳舞" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹琴" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的偶像："
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+
+    </GridView>
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_bg_commit"
+        android:text="提交" />
+</LinearLayout>
